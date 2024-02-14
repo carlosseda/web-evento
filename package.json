@@ -1,0 +1,25 @@
+{
+  "name": "web-evento",
+  "version": "1.0.0",
+  "description": "Web para un evento de actividades varias",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosseda/web-evento.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlosseda/web-evento/issues"
+  },
+  "homepage": "https://github.com/carlosseda/web-evento#readme",
+  "devDependencies": {
+    "standard": "^17.1.0",
+    "terser": "^5.27.0",
+    "vite": "^5.1.1"
+  }
+}
