@@ -1,2 +1,2 @@
-import './components/faqs.js'
-import './components/menu.js'
+import './components/font-loader.js'
+import './components/hero.js'
