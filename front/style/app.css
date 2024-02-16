@@ -5,6 +5,7 @@ body{
 
 .hero{
 	min-height: 100vh;
+	max-height: 100vh;
 	overflow: hidden;
 	position: relative;
 	width: 100%;
@@ -44,6 +45,7 @@ body{
 	line-height: 1.2;
 	margin: 0;
 	text-align: center;
+	text-transform: capitalize;
 }
 
 .hero-description p{

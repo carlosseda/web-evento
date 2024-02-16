@@ -29,28 +29,20 @@ class Hero extends HTMLElement {
           .hero-image img{
             height: 100%;
             object-fit: cover;
-            width: 100%;
+            max-width: 100%;
           }
 
           .hero-content{
             align-items: center;
-            animation: fadeIn 1.5s ease-in-out forwards; 
             background-color: hsla(0, 0%, 0%, 0.5);
             display: flex;
             flex-direction: column;
             gap: 2rem;
             height: 100%;
             justify-content: center;
-            opacity: 0;
             position: absolute;
             width: 100%;
             z-index: 1001;
-          }
-
-          @keyframes fadeIn {
-            to {
-                opacity: 1;
-            }
           }
 
           .hero-title h1{
@@ -61,6 +53,7 @@ class Hero extends HTMLElement {
             line-height: 1.2;
             margin: 0;
             text-align: center;
+            text-transform: capitalize;
           }
 
           .hero-description p{
@@ -85,8 +78,10 @@ class Hero extends HTMLElement {
             transition: all 0.3s ease;
           }
 
-          .hero-button button:hover{
-            background-color: hsl(204, 59%, 61%);
+          @media (hover: hover) {
+            .hero-button button:hover{
+              background-color: hsl(204, 59%, 61%);
+            }
           }
 
           @media (min-width: 601px) {
