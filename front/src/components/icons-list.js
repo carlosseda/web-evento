@@ -10,7 +10,6 @@ class IconsList extends HTMLElement {
   }
 
   render () {
-    console.log(this.orientation)
     this.shadow.innerHTML =
       /* html */`
         <style>
