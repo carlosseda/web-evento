@@ -29,7 +29,7 @@ class Hero extends HTMLElement {
           .hero-image img{
             height: 100%;
             object-fit: cover;
-            max-width: 100%;
+            width: 100%;
           }
 
           .hero-content{
@@ -121,7 +121,7 @@ class Hero extends HTMLElement {
             }
           }
 
-          @media (min-width: 1920px) {
+          @media (min-width: 1921px) {
 
           }
         </style>

@@ -9,32 +9,15 @@
 </head>
 <body>
 	<font-loader-component></font-loader-component>
-	<header></header>
+	<header>
+    <logo-component></logo-component>
+    <menu-component></menu-component>
+  </header>
 	<main>
-		<!-- <hero-component></hero-component> -->
-		<section class="hero">
-			<div class="hero-image">
-				<picture>
-					<source srcset="./public/son-sampol-mobile.webp" type="image/webp" media="(max-width: 600px)">
-					<source srcset="./public/son-sampol.webp" type="image/webp" media="(min-width: 601px)">
-					<img src="./public/son-sampol.webp" alt="son-sampol" title="finca son sampol">
-				</picture>
-			</div>
-			<div class="hero-content">
-				<div class="hero-title">
-					<h1>encuentro mosaico</h1>
-				</div>
-				<div class="hero-description">
-					<p>un espacio para compartir, aprender y disfrutar</p>
-				</div>
-				<div class="hero-button">
-					<a href="./jornadas.html">
-						<button>Ver horarios</button>
-					</a>
-				</div>
-			</div>
-		</section>
+		<hero-component></hero-component>
 	</main>
-	<footer></footer>
+	<footer>
+    <icons-list-component></icons-list-component>
+  </footer>
 </body>
 </html>
