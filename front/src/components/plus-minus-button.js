@@ -18,7 +18,7 @@ class PlusMinusButton extends HTMLElement {
 
         button {
           border: none;
-          border-radius: 50%;
+          border-radius: 0.5rem;
           color: hsl(0, 0%, 100%);
           cursor: pointer;
           height: 2.2rem;

@@ -171,18 +171,31 @@ class Cart extends HTMLElement {
       }
 
       .cart-header{
-        align-items: center;
         background-color: hsl(236 55% 25%);
         display: flex;
-        justify-content: space-between;
-        padding: 0.5rem;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.5rem ;
       }
 
-      .cart-header h4{
+      .cart-header-title{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .cart-header-title h4{
         color: hsl(0, 0%, 100%);
         font-family: 'Poppins', sans-serif;
         font-size: 1rem;
         font-weight: 400;
+        margin: 0;
+      }
+
+      .cart-header-subtitle p{
+        color: hsl(0, 0%, 100%);
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.8rem;
         margin: 0;
       }
 
@@ -452,16 +465,17 @@ class Cart extends HTMLElement {
 
       <div class="cart ${open}">
         <div class="cart-header">
-          <h4>Tu horario para el evento</h4>
-          <button class="close-button">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg>
-          </button>
-        </div>
-        <div class="cart-products">
-          <div class="cart-products-info">
-            <p>¿Cuantas personas quieres apuntar a cada actividad?</p>
+          <div class="cart-header-title">
+            <h4>Tu horario para el evento</h4>
+            <button class="close-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg>
+            </button>
+          </div>
+          <div class="cart-header-subtitle">
+            <p>Dinos cuantas personas quieres apuntar a cada activdad</p>
           </div>
         </div>
+        <div class="cart-products"></div>
         <div class="cart-no-products  ${this.products.length === 0 ? 'active' : ''}">
           <p>Aun no te has apuntado a ninguna actividad</p>
         </div>

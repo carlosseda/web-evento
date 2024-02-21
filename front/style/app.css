@@ -7,19 +7,3 @@ body{
 body.block-scroll{
   overflow: hidden;
 }
-
-header{
-  align-items: center;
-  background-color: hsla(0, 0%, 20%, 0.5);
-  box-sizing: border-box;
-  display: flex;
-  height: 10vh;
-  max-height: 10vh;
-  justify-content: space-between;
-  left: 0;
-  padding: 0 2rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 5000;
-}

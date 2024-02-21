@@ -1,4 +1,8 @@
 import './components/font-loader.js'
+import './components/page.js'
+import './components/header.js'
+import './components/main.js'
+import './components/footer.js'
 import './components/margins.js'
 import './components/row.js'
 import './components/logo.js'
