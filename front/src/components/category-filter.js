@@ -50,7 +50,7 @@ class CategoryFilter extends HTMLElement {
 
     <section class="categories">
       <div class="category">
-        <h3>Familiares</h3>
+        <h3>Familias</h3>
       </div>
       <div class="category">
         <h3>Adultos</h3>

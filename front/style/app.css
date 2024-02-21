@@ -1,6 +1,11 @@
 body{
+  background-color: hsl(0, 0%, 95%);
 	margin: 0;
 	padding: 0;
+}
+
+body.block-scroll{
+  overflow: hidden;
 }
 
 header{
