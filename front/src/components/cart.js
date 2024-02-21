@@ -107,6 +107,33 @@ class Cart extends HTMLElement {
           url: 'https://picsum.photos/50/50',
           alt: 'Producto 3'
         }
+      },
+      {
+        id: 1,
+        path: '/juegos/call-of-duty',
+        title: 'Taller de marionetas',
+        image: {
+          url: 'https://picsum.photos/50/50',
+          alt: 'Producto 1'
+        }
+      },
+      {
+        id: 2,
+        path: '/juegos/call-of-duty',
+        title: 'Taller de pintura para niños',
+        image: {
+          url: 'https://picsum.photos/50/50',
+          alt: 'Producto 2'
+        }
+      },
+      {
+        id: 3,
+        path: '/juegos/call-of-duty',
+        title: 'Charla sobre la importancia de la lectura en la infancia',
+        image: {
+          url: 'https://picsum.photos/50/50',
+          alt: 'Producto 3'
+        }
       }
     ]
   }

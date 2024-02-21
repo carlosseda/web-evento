@@ -17,7 +17,7 @@ class AddButton extends HTMLElement {
           }
 
           .add-button {
-            background-color: hsl(0, 0, 100%);
+            background-color: hsl(0, 0%, 100%);
             border: none;
             border-radius: 50%;
             cursor: pointer;
