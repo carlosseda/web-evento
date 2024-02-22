@@ -185,10 +185,10 @@ class Cart extends HTMLElement {
         max-height: 100vh;
         opacity: 0;
         position: fixed;
-        right: -300px;
+        right: -400px;
         transition: right 0.2s ease-in-out, opacity 0.2s ease-in-out;
         top: 0;
-        width: 300px;
+        width: 400px;
         z-index: 1001;
       }
 
@@ -313,8 +313,16 @@ class Cart extends HTMLElement {
         gap: 0.5rem;
       }
 
-      .cart-product img{
+      .cart-product-image{
         border-radius: 0.5rem;
+        height: 50px;
+        overflow: hidden;
+        width: 50px;
+      }
+
+      .cart-product-image img{
+        object-fit: cover;
+        width: 100%;
       }
 
       .cart-product a{
@@ -564,9 +572,13 @@ class Cart extends HTMLElement {
       const productElement = document.createElement('div')
       productElement.classList.add('cart-product')
 
+      const productImageContainer = document.createElement('div')
+      productImageContainer.classList.add('cart-product-image')
+
       const productImage = document.createElement('img')
       productImage.setAttribute('src', product.image.url)
       productImage.setAttribute('alt', product.image.alt)
+      productImageContainer.appendChild(productImage)
 
       const productInfo = document.createElement('div')
       productInfo.classList.add('product-info')
@@ -587,7 +599,7 @@ class Cart extends HTMLElement {
       productButton.dataset.id = product.id
       productButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg>'
 
-      productElement.appendChild(productImage)
+      productElement.appendChild(productImageContainer)
       productInfo.appendChild(productLink)
       productInfo.appendChild(productPlusMinusButton)
       productElement.appendChild(productInfo)
